@@ -1,14 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precious Bikusa | Personal</title>
+
+  <!-- Favicon: inline SVG monogram, no images folder needed for this per the standards -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232F4B3D'/%3E%3Ctext x='16' y='22' font-size='14' font-family='Georgia,serif' fill='%23F5F7F0' text-anchor='middle'%3EPB%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts: exempt from the styles/ folder rule -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* One color palette used consistently across the whole page (Repetition) */
+    :root {
+      --bg: #EDF1EC;
+      --pine: #2F4B3D;
+      --pine-dark: #223a2f;
+      --cream: #F5F7F0;
+      --text: #262B22;
+      --muted: #5C6B5C;
+      --link: #8A4B14;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Work Sans', sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--pine);
+      color: var(--cream);
+      padding: 2.5rem 1.5rem 2rem;
+    }
+
+    header h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: 2.4rem;
+      margin: 0 0 0.4rem;
+      max-width: 40rem;
+      margin-inline: auto;
+    }
+
+    /* Site tagline, italic per standards, placed in the header */
+    header p {
+      font-style: italic;
+      color: var(--cream);
+      opacity: 0.85;
+      margin: 0;
+      max-width: 40rem;
+      margin-inline: auto;
+    }
+
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 1rem;
+    }
+
+    main h2 {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      color: var(--pine-dark);
+      margin-top: 0;
+    }
+
+    main h3 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      color: var(--pine-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    figure {
+      margin: 0 0 1.75rem;
+    }
+
+    figure img {
+      width: 100%;
+      max-width: 280px;
+      display: block;
+      border-radius: 4px;
+    }
+
+    figcaption {
+      font-style: italic;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 0.4rem;
+    }
+
+    main p {
+      max-width: 38rem;
+    }
+
+    main ul {
+      padding-left: 1.2rem;
+    }
+
+    main li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: var(--link);
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--pine-dark);
+    }
+
+    a:focus {
+      outline: 2px solid var(--pine-dark);
+      outline-offset: 2px;
+    }
+
+    footer {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem 2.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* Mobile: tighten spacing and center the photo on small screens */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.9rem;
+      }
+
+      figure {
+        text-align: center;
+      }
+
+      figure img {
+        margin: 0 auto;
+      }
+    }
+  </style>
+
+  <!-- Accumulus validator: required last line in head -->
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    this is precious and this is my root of my website
-<a href = "itis3135/">Click to go to my ITIS3135 Site</a> 
+
+  <header>
+    <h1>Precious Bikusa</h1>
+  </header>
+
+  <main>
+    <h2>About Me</h2>
+
+    <figure>
+      <!-- Replace this file with your own photo before submitting -->
+      <img src="images/precious_bikusa.jpg" alt="Precious Bikusa" width="280" height="280">
+      <figcaption>Precious Bikusa</figcaption>
+    </figure>
+
+    <p>
+      Hi, welcome to my personal page. I'm studying computer science with a
+      concentration in cybersecurity. Outside of class I like to stay active
+      by walking and going to the gym, and I enjoy trying new recipes in the
+      kitchen.
+    </p>
+
+    <h3>Outside of Class</h3>
+    <ul>
+      <li>Cybersecurity, my area of focus within computer science</li>
+      <li>Staying active through walking and the gym</li>
+      <li>Cooking new recipes</li>
+    </ul>
+
+    <p>
+      I'm currently taking <a href="itis3135/">ITIS3135</a>, that's where you'll find the coursework for
+      this semester.
+    </p>
+  </main>
+
+  <footer>
+    © 2026 Precious Bikusa 
+  </footer>
+
+  <!-- Vicunadator: required before end of body -->
+  <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
 </body>
 </html>
-
