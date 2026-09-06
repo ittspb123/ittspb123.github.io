@@ -1,0 +1,218 @@
+:root {
+  --river: #123F4A;
+  --river-deep: #0C2C35;
+  --sand: #F7F3E8;
+  --sand-warm: #EFE7D5;
+  --ink: #22282B;
+  --muted: #55666C;
+  --clay: #C97B3C;
+  --clay-light: #EBA972;
+  --link: #EFE7D5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--sand);
+  color: var(--ink);
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+/* ---------- Header (identical on every page) ---------- */
+
+header {
+  background: var(--river);
+  color: var(--sand);
+  padding: 2rem 1.5rem 1.25rem;
+  text-align: center;
+  border-bottom: 5px solid var(--clay);
+}
+
+h1 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.35rem, 4vw, 2.1rem);
+  margin: 0.5rem 0 0.35rem;
+  color: var(--sand);
+}
+
+/* Site tagline, italicised per the standards */
+blockquote,
+header p {
+  font-style: italic;
+  margin: 0;
+}
+
+header p {
+  color: var(--sand-warm);
+  font-size: 0.98rem;
+}
+
+nav {
+  font-family: 'Outfit', sans-serif;
+  margin-top: 1rem;
+}
+
+header nav a {
+  color: var(--sand);
+  margin: 0 0.15rem;
+}
+
+header nav a:hover,
+header nav a:focus {
+  color: var(--clay-light);
+}
+
+/* ---------- Main ---------- */
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2.25rem 1.5rem 1rem;
+}
+
+h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--river);
+  margin-top: 0;
+  border-bottom: 2px solid var(--sand-warm);
+  padding-bottom: 0.4rem;
+}
+
+h3 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--river);
+  margin-bottom: 0.4rem;
+}
+
+p {
+  max-width: 40rem;
+}
+
+ul {
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.45rem;
+}
+
+figure {
+  margin: 1.75rem auto;
+  text-align: center;
+}
+
+figure img {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  border: 4px solid var(--sand-warm);
+  border-radius: 3px;
+}
+
+figcaption {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-top: 0.5rem;
+}
+
+blockquote {
+  text-align: center;
+  color: var(--river);
+  border-left: none;
+  margin: 2rem auto;
+  max-width: 34rem;
+}
+
+/* ---------- Links ---------- */
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--link);
+}
+
+a:hover,
+a:focus {
+  color: var(--clay);
+}
+
+a:focus {
+  outline: 2px solid var(--clay);
+  outline-offset: 2px;
+}
+
+/* ---------- Footer (identical on every page) ---------- */
+
+footer {
+  background: var(--river-deep);
+  color: var(--sand-warm);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1.75rem 1.5rem 2rem;
+  margin-top: 2.5rem;
+}
+
+footer a {
+  color: var(--sand);
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--clay-light);
+}
+
+footer p {
+  max-width: 44rem;
+  margin: 0.6rem auto 0;
+}
+
+/* ---------- Justified classes ----------
+   The intro page's standards require two centred lines that
+   are otherwise ordinary paragraphs, and normal paragraphs on
+   this site must stay left-aligned. These two classes exist
+   solely to mark those required exceptions.                  */
+
+.display-name {
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.15rem;
+  color: var(--river);
+  max-width: none;
+}
+
+.links-line {
+  text-align: center;
+  max-width: none;
+  margin-top: 2rem;
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 480px) {
+  main {
+    padding: 1.75rem 1.15rem 1rem;
+  }
+
+  nav {
+    line-height: 2.1;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}

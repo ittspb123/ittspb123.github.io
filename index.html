@@ -5,13 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Precious Bikusa | Personal</title>
 
-  <!-- Favicon: inline SVG monogram, no images folder needed for this per the standards -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232F4B3D'/%3E%3Ctext x='16' y='22' font-size='14' font-family='Georgia,serif' fill='%23F5F7F0' text-anchor='middle'%3EPB%3C/text%3E%3C/svg%3E">
-
-  <!-- Google Fonts: exempt from the styles/ folder rule -->
+  <!-- Favicon: -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='6'%20fill='%232F4B3D'/%3E%3Ctext%20x='16'%20y='22'%20font-size='14'%20font-family='Georgia,serif'%20fill='%23F5F7F0'%20text-anchor='middle'%3EPB%3C/text%3E%3C/svg%3E">
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Work+Sans:wght@400;500&amp;display=swap" rel="stylesheet">
   <style>
     /* One color palette used consistently across the whole page (Repetition) */
     :root {
@@ -40,14 +38,14 @@
       padding: 2.5rem 1.5rem 2rem;
     }
 
-    header h1 {
-      font-family: 'Fraunces', serif;
-      font-weight: 600;
-      font-size: 2.4rem;
-      margin: 0 0 0.4rem;
-      max-width: 40rem;
-      margin-inline: auto;
-    }
+    h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: clamp(1.9rem, 5vw, 2.4rem);
+  margin: 0 0 0.4rem;
+  max-width: 40rem;
+  margin-inline: auto;
+}
 
     /* Site tagline, italic per standards, placed in the header */
     header p {
@@ -65,19 +63,20 @@
       padding: 2.5rem 1.5rem 1rem;
     }
 
-    main h2 {
-      font-family: 'Fraunces', serif;
-      font-weight: 600;
-      color: var(--pine-dark);
-      margin-top: 0;
-    }
+    h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  color: var(--pine-dark);
+  margin-top: 0;
+}
+    
 
-    main h3 {
-      font-family: 'Fraunces', serif;
-      font-weight: 500;
-      color: var(--pine-dark);
-      margin-bottom: 0.5rem;
-    }
+    h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  color: var(--pine-dark);
+  margin-bottom: 0.5rem;
+}
 
     figure {
       margin: 0 0 1.75rem;
@@ -137,10 +136,9 @@
     }
 
     /* Mobile: tighten spacing and center the photo on small screens */
-    @media (max-width: 480px) {
-      header h1 {
-        font-size: 1.9rem;
-      }
+     header h1 {
+  font-size: 1.9rem;
+}
 
       figure {
         text-align: center;
@@ -149,7 +147,7 @@
       figure img {
         margin: 0 auto;
       }
-    }
+    
   </style>
 
   <!-- Accumulus validator: required last line in head -->
