@@ -23,7 +23,7 @@ body {
   line-height: 1.65;
 }
 
-/* ---------- Header (identical on every page) ---------- */
+/* Header  */
 
 header {
   background: var(--river);
@@ -41,7 +41,6 @@ h1 {
   color: var(--sand);
 }
 
-/* Site tagline, italicised per the standards */
 blockquote,
 header p {
   font-style: italic;
@@ -68,7 +67,7 @@ header nav a:focus {
   color: var(--clay-light);
 }
 
-/* ---------- Main ---------- */
+/* Main  */
 
 main {
   max-width: 44rem;
@@ -134,28 +133,22 @@ blockquote {
   max-width: 34rem;
 }
 
-/* ---------- Links ---------- */
+/*  Links  */
 
-a {
-  color: var(--link);
-  text-decoration: underline;
+footer a {
+  color: var(--sand);
 }
 
-a:visited {
-  color: var(--link);
+footer a:visited {
+  color: var(--sand);
 }
 
-a:hover,
-a:focus {
-  color: var(--clay);
+footer a:hover,
+footer a:focus {
+  color: var(--clay-light);
 }
 
-a:focus {
-  outline: 2px solid var(--clay);
-  outline-offset: 2px;
-}
-
-/* ---------- Footer (identical on every page) ---------- */
+/*  Footer  */
 
 footer {
   background: var(--river-deep);
@@ -181,11 +174,6 @@ footer p {
   margin: 0.6rem auto 0;
 }
 
-/* ---------- Justified classes ----------
-   The intro page's standards require two centred lines that
-   are otherwise ordinary paragraphs, and normal paragraphs on
-   this site must stay left-aligned. These two classes exist
-   solely to mark those required exceptions.                  */
 
 .display-name {
   text-align: center;
@@ -201,7 +189,7 @@ footer p {
   margin-top: 2rem;
 }
 
-/* ---------- Small screens ---------- */
+/* Small screens  */
 
 @media (max-width: 480px) {
   main {
