@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Precious Bikusa | Personal</title>
 
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='6'%20fill='%232F4B3D'/%3E%3Ctext%20x='16'%20y='22'%20font-size='14'%20font-family='Georgia,serif'%20fill='%23F5F7F0'%20text-anchor='middle'%3EPB%3C/text%3E%3C/svg%3E">
+  <title>Precious Bikusa | About Me</title>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='6'%20fill='%232F4B3D'/%3E%3Ctext%20x='16'%20y='22'%20font-size='14'%20font-family='Georgia,serif'%20fill='%23F5F7F0'%20text-anchor='middle'%3EPB%3C/text%3E%3C/svg%3E">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Work+Sans:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Work+Sans:wght@400;500&amp;display=swap" rel="stylesheet">
+
   <style>
     :root {
       --bg: #EDF1EC;
@@ -19,10 +22,13 @@
       --link: #8A4B14;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
-      margin: 0;
+      max-width: 1200px;
+      margin: 0 auto;
       background: var(--bg);
       color: var(--text);
       font-family: 'Work Sans', sans-serif;
@@ -36,21 +42,19 @@
     }
 
     h1 {
-  font-family: 'Fraunces', serif;
-  font-weight: 600;
-  font-size: clamp(1.9rem, 5vw, 2.4rem);
-  margin: 0 0 0.4rem;
-  max-width: 40rem;
-  margin-inline: auto;
-}
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: clamp(1.9rem, 5vw, 2.4rem);
+      max-width: 40rem;
+      margin: 0 auto 0.4rem;
+    }
 
     header p {
       font-style: italic;
       color: var(--cream);
       opacity: 0.85;
-      margin: 0;
       max-width: 40rem;
-      margin-inline: auto;
+      margin: 0 auto;
     }
 
     main {
@@ -60,28 +64,30 @@
     }
 
     h2 {
-  font-family: 'Fraunces', serif;
-  font-weight: 600;
-  color: var(--pine-dark);
-  margin-top: 0;
-}
-    
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      color: var(--pine-dark);
+      margin-top: 0;
+    }
 
     h3 {
-  font-family: 'Fraunces', serif;
-  font-weight: 500;
-  color: var(--pine-dark);
-  margin-bottom: 0.5rem;
-}
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      color: var(--pine-dark);
+      margin-bottom: 0.5rem;
+    }
 
     figure {
       margin: 0 0 1.75rem;
+      text-align: center;
     }
 
     figure img {
       width: 100%;
+      height: auto;
       max-width: 280px;
       display: block;
+      margin: 0 auto;
       border-radius: 4px;
     }
 
@@ -104,13 +110,10 @@
       margin-bottom: 0.4rem;
     }
 
-    a {
-      color: var(--link);
-      text-decoration: underline;
-    }
-
+    a,
     a:visited {
       color: var(--link);
+      text-decoration: underline;
     }
 
     a:hover,
@@ -131,51 +134,73 @@
       font-size: 0.9rem;
     }
 
-      figure {
-        text-align: center;
+    @media (max-width: 480px) {
+      header {
+        padding: 2rem 1rem;
       }
 
-      figure img {
-        margin: 0 auto;
+      main,
+      footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
       }
-    
+    }
   </style>
-  <!-- Accumulus validator -->
+
+  <!-- Accumulus validator: last element in head. -->
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
+<body>
   <header>
     <h1>Precious Bikusa</h1>
+    <p><em>Learning, creating, and growing.</em></p>
   </header>
 
   <main>
     <h2>About Me</h2>
 
     <figure>
-      <img src="itis3135/images/waterfall.jpg" alt="pic of a waterfall" width="280" height="187">
+      <img
+        src="images/waterfall.jpg"
+        alt="pic of a waterfall"
+        width="280"
+        height="187"
+      >
       <figcaption>Waterfall</figcaption>
     </figure>
 
     <p>
-      Hi, welcome to my personal page. I'm currently taking <a href="itis3135/">ITIS3135</a>, that's where you'll find the coursework for
-      this semester.
+      Hi, welcome to my personal page. I'm currently taking
+      <a href="itis3135/">ITIS3135</a>, that's where you'll find
+      the coursework for this semester.
     </p>
 
-    <h3>Outside of class I like to</h3>
+    <h3>Outside of Class I Like To</h3>
+
     <ul>
-      <li>Watching anime and getting into K-Dramas: watch list currently: My Hero Academia, Gachiakuta, The Wonderfools, and The Glory   
+      <li>
+        Watching anime and getting into K-Dramas: watch list
+        currently: My Hero Academia, Gachiakuta, The Wonderfools,
+        and The Glory
+      </li>
       <li>Staying active through walking and the gym</li>
       <li>Cooking new recipes</li>
     </ul>
-    
   </main>
 
   <footer>
-   <p>Designed by <a href="itis3135/bikusastudio.co/">Bikusa Studio</a> &copy;2026</p>  
+    <p>
+      Designed by
+      <a href="itis3135/bikusastudio.co/">Bikusa Studio</a>
+      &copy;2026
+    </p>
   </footer>
 
   <!-- Vicunadator -->
-  <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+  <script
+    src="https://divonbriesen.github.io/teaching/tools/standards-check.js"
+    defer
+  ></script>
 </body>
 </html>

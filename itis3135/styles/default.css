@@ -7,6 +7,8 @@
   --muted: #55666c;
   --clay: #c97b3c;
   --clay-light: #eba972;
+  --link: #8a4b14;
+  --link-hover: #62350e;
 }
 
 * {
@@ -95,7 +97,7 @@ h3 {
   margin-bottom: 0.4rem;
 }
 
-/* The introduction display name uses h6 as required by the grader. */
+/* Introduction display name */
 
 h6 {
   text-align: center;
@@ -152,17 +154,17 @@ blockquote {
   max-width: 34rem;
 }
 
-/* Main-content links */
+/* Main-content links: normal and visited use the same brown. */
 
 main a,
 main a:visited {
-  color: var(--river);
+  color: var(--link);
   text-decoration: underline;
 }
 
 main a:hover,
 main a:focus {
-  color: var(--river-deep);
+  color: var(--link-hover);
 }
 
 /* Shared footer */

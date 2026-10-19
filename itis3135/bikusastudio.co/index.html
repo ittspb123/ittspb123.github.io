@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Bikusa Studio | Home</title>
+
   <link rel="icon" type="image/svg+xml" href="images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+
   <style>
     :root {
       --ink: #171732;
@@ -22,7 +24,8 @@
     }
 
     body {
-      margin: 0;
+      max-width: 1200px;
+      margin: 0 auto;
       background: var(--paper);
       color: var(--ink);
       font-family: 'Inter', Arial, sans-serif;
@@ -111,7 +114,8 @@
       margin: 0.35rem 0;
     }
 
-    address a {
+    address a,
+    address a:visited {
       color: var(--ink);
       text-decoration: none;
       border-bottom: 1px solid var(--pink);
@@ -131,7 +135,8 @@
       margin-top: 3rem;
     }
 
-    footer a {
+    footer a,
+    footer a:visited {
       color: var(--paper);
     }
 
@@ -155,14 +160,29 @@
       }
     }
   </style>
-</head>
-<body>
 
+  <!-- Accumulus validator: last element in head. -->
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
   <header>
-    <img src="images/logo.svg" alt="Bikusa Studio logo" width="72" height="72">
+    <img
+      src="images/logo.svg"
+      alt="Bikusa Studio logo"
+      width="72"
+      height="72"
+    >
+
+    <!-- This div groups the firm name and tagline beside the logo in the flex header. -->
     <div>
       <h1>Bikusa Studio</h1>
-      <p>Design &amp; development for people who'd rather not build it themselves</p>
+      <p>
+        <em>
+          Design &amp; development for people who'd rather
+          not build it themselves
+        </em>
+      </p>
     </div>
   </header>
 
@@ -170,35 +190,74 @@
     <h2>Home</h2>
 
     <p>
-      Bikusa Studio is a small design and development shop with one rule: your site should feel like you, not a template. We bild clean, fast sites for individuals and small businesses who want something that actually reflects their work.
+      Bikusa Studio is a small design and development shop with
+      one rule: your site should feel like you, not a template.
+      We build clean, fast sites for individuals and small
+      businesses who want something that actually reflects
+      their work.
     </p>
 
-    <h3>What makes us different</h3>
+    <h3>What Makes Us Different</h3>
+
     <ul>
-      <li>We design the palette and layout from scratch for each client</li>
-      <li>Fast page loads, because bloated sites lose visitors</li>
-      <li>Accessible by default: readable contrast, keyboard-friendly navigation</li>
-      <li>Mobile first layouts that hold up on any screen size</li>
-      <li>Plain language project updates, no jargon walls</li>
-      <li>Small enough to actually know your project, not just your ticket number</li>
+      <li>
+        We design the palette and layout from scratch for each client
+      </li>
+      <li>
+        Fast page loads, because bloated sites lose visitors
+      </li>
+      <li>
+        Accessible by default: readable contrast,
+        keyboard-friendly navigation
+      </li>
+      <li>
+        Mobile first layouts that hold up on any screen size
+      </li>
+      <li>
+        Plain language project updates, no jargon walls
+      </li>
+      <li>
+        Small enough to actually know your project,
+        not just your ticket number
+      </li>
     </ul>
 
-    <h3>What we can do for you</h3>
+    <h3>What We Can Do for You</h3>
+
     <p>
-      Whether you need a first website, a redesign, or ongoing updates, we scope it, build it, and hand it off with clear documentation, so you're never locked out of your own site
+      Whether you need a first website, a redesign, or ongoing
+      updates, we scope it, build it, and hand it off with clear
+      documentation, so you're never locked out of your own site.
     </p>
 
-    <h3>Get in touch</h3>
+    <h3>Get in Touch</h3>
+
     <address>
       <p>Phone: (704) 980-5034</p>
-      <p>Email: <a href="mailto:hello@bikusastudio.co">hello@bikusastudio.co</a></p>
-      <p>Address: 4288 Main Boulevard, Charlotte, NC 28288</p>
+      <p>
+        Email:
+        <a href="mailto:hello@bikusastudio.co">
+          hello@bikusastudio.co
+        </a>
+      </p>
+      <p>
+        Address: 4288 Main Boulevard, Charlotte, NC 28288
+      </p>
     </address>
   </main>
 
   <footer>
-    <p>Page created by Bikusa Studio &mdash; Certified Front-End-Web-Developer, UNC Charlotte ITIS 3135 &copy;2026</p>
+    <p>
+      Page created by Bikusa Studio &mdash;
+      Certified Front-End-Web-Developer,
+      UNC Charlotte ITIS 3135 &copy;2026
+    </p>
   </footer>
-  <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+
+  <!-- Vicunadator -->
+  <script
+    src="https://divonbriesen.github.io/teaching/tools/standards-check.js"
+    defer
+  ></script>
 </body>
 </html>
