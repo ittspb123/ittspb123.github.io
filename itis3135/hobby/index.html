@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore anime with Precious: stories, viewing habits, places to watch, and tips for getting started.">
+    <title>Anime: Between Episodes ✦ What — Home</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <style>
+        /* All styling is embedded, as required for this assignment. */
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: radial-gradient(ellipse at top, #253b56, #101a29 65%);
+            min-height: 100vh;
+            color: #eee8dc;
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            line-height: 1.7;
+        }
+        header, main, footer { width: 90%; max-width: 960px; margin: auto; }
+        header { padding: 48px 0 30px; text-align: center; }
+        h1 { font-family: Georgia, serif; line-height: 1.25; font-size: clamp(2rem, 5vw, 3.4rem); margin: 0; color: #f3cf85; }
+        header p { margin: 12px 0 24px; }
+        nav { line-height: 2.8; }
+        a, a:visited { color: #f3cf85; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        header nav a { display: inline-block; padding: 3px 11px; border-radius: 8px; }
+        header nav a[aria-current="page"] { background: #f3cf85; color: #142133; }
+        a:focus-visible, [tabindex="-1"]:focus { outline: 3px solid #f7dfad; outline-offset: 5px; }
+        main { padding-bottom: 24px; }
+        section { padding: 30px; border: 1px solid #52677f; border-radius: 18px; background: #1b2b40; box-shadow: 0 14px 42px #0b1320; }
+        section[hidden] { display: none; }
+        h2 { font-family: Georgia, serif; line-height: 1.25; color: #f3cf85; font-size: 2rem; margin-top: 0; }
+        h3 { font-family: Georgia, serif; line-height: 1.25; color: #f3cf85; margin-top: 28px; }
+        figure { margin: 28px 0; }
+        img { display: block; width: 100%; height: auto; border-radius: 12px; }
+        /* Picture windows display one panel of the approved artwork without distortion.
+           Section IDs select the matching panel; every image shares one cached file. */
+        figure picture { display: block; aspect-ratio: 9 / 4; overflow: hidden; border-radius: 12px; background: #142133; }
+        figure picture img { width: 200%; max-width: none; height: auto; border-radius: 0; }
+        #where picture img { transform: translateX(-50%); }
+        #why picture img { transform: translateY(-33.333333%); }
+        #when picture img { transform: translate(-50%, -33.333333%); }
+        #how picture img { transform: translateY(-66.666667%); }
+        #who picture img { transform: translate(-50%, -66.666667%); }
+        figcaption { margin-top: 12px; font-size: 0.95rem; }
+        figure p { color: #c5d1df; font-size: 0.9rem; }
+        li { margin-bottom: 8px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        caption { text-align: left; font-weight: bold; margin-bottom: 10px; }
+        th, td { padding: 12px; border: 1px solid #687e96; text-align: left; }
+        th { background: #293d55; color: #f3cf85; }
+        footer { padding: 10px 0 36px; text-align: center; font-size: 0.95rem; }
+        footer nav a { display: inline-block; padding: 4px 14px; border: 1px solid #687e96; border-radius: 8px; margin: 5px; }
+        /* ID positions a keyboard skip link; section IDs are navigation targets. */
+        #skip-link { position: absolute; top: -100px; left: 15px; padding: 10px; background: #1b2b40; }
+        #skip-link:focus { top: 10px; z-index: 2; }
+        @media (max-width: 600px) {
+            header { padding-top: 28px; }
+            section { padding: 20px; }
+            header nav a { padding: 2px 5px; }
+            th, td { padding: 8px; font-size: 0.9rem; }
+        }
+    </style>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a id="skip-link" href="#main-content">Skip to content</a>
+    <header>
+        <h1>Anime: Between Episodes</h1>
+        <p><em>A little adventure, one episode at a time.</em></p>
+        <nav aria-label="Anime sections">
+            <a href="#what" aria-current="page">What</a> ✦
+            <a href="#who">Who</a> ✦
+            <a href="#when">When</a> ✦
+            <a href="#where">Where</a> ✦
+            <a href="#how">How</a> ✦
+            <a href="#why">Why</a> ✦
+            <a href="#ai-prompts">AI Prompts</a>
+        </nav>
+    </header>
+    <!-- IDs connect the navigation links, section visibility, and keyboard focus. -->
+    <main id="main-content" tabindex="-1">
+        <section id="what" aria-labelledby="what-heading">
+            <h2 id="what-heading" tabindex="-1">What — Home</h2>
+            <p>Anime is animation from Japan, with stories ranging from everyday friendships to adventures in imaginary worlds. It is a medium with many genres, rather than one type of story.</p>
+            <figure>
+                <picture>
+                    <img src="images/anime-genres.png" width="1536" height="1024" alt="Tanjiro Kamado wielding his sword amid swirling blue water in a moonlit forest.">
+                </picture>
+                <figcaption>Action — Demon Slayer: a dramatic introduction to anime’s adventurous side.
+                    <p><em>AI image prompt summary: Create an anime-style image of Tanjiro from Demon Slayer using a water-breathing sword technique in a moonlit forest. This is AI-generated fan art, not an official screenshot.</em></p>
+                </figcaption>
+            </figure>
+            <h3>A Story for Different Moods</h3>
+            <ul>
+                <li><strong>Action:</strong> Demon Slayer combines adventure with dramatic battles.</li>
+                <li><strong>Fantasy:</strong> Frieren explores an imaginative world through a mage’s journey.</li>
+                <li><strong>Romance:</strong> Fruits Basket combines relationships with supernatural elements.</li>
+                <li><strong>Slice of life:</strong> Laid-Back Camp focuses on relaxed outdoor adventures.</li>
+                <li><strong>Sci-fi:</strong> Cowboy Bebop follows bounty hunters traveling through space.</li>
+                <li><strong>Sports:</strong> Haikyu!! brings volleyball, teamwork, and competition together.</li>
+            </ul>
+            <p>This site explores why I enjoy anime and offers a simple starting point for someone interested in watching.</p>
+        </section>
+        <section id="who" aria-labelledby="who-heading" hidden>
+            <h2 id="who-heading" tabindex="-1">Who — About Me</h2>
+            <p>Hi, I’m Precious! I’m a computer science student at UNC Charlotte, and watching anime is one of my interests outside of school. I also enjoy video games, reading, and working out.</p>
+            <figure>
+                <picture>
+                    <img src="images/anime-genres.png" width="1536" height="1024" alt="Shoyo Hinata jumping toward a volleyball at the net inside a brightly lit gym.">
+                </picture>
+                <figcaption>Sports — Haikyu!!: one example of the variety anime has to offer.
+                    <p><em>AI image prompt summary: Create an anime-style image of Hinata from Haikyu!! jumping to spike a volleyball during a match. This is AI-generated fan art, not an official screenshot.</em></p>
+                </figcaption>
+            </figure>
+            <h3>What This Site Shares</h3>
+            <p>This is a personal introduction to anime, with ideas for choosing a series, finding a place to watch, and keeping the hobby manageable during a busy semester.</p>
+            <p>You do not need to know every show or recognize every reference to enjoy anime. Being curious about a story is enough to get started.</p>
+        </section>
+        <section id="when" aria-labelledby="when-heading" hidden>
+            <h2 id="when-heading" tabindex="-1">When — Make Time for an Episode</h2>
+            <p>The best time to watch is when it fits around your responsibilities. A short viewing session can be easier to manage than starting a long marathon.</p>
+            <figure>
+                <picture>
+                    <img src="images/anime-genres.png" width="1536" height="1024" alt="Rin and Nadeshiko sitting at a lakeside campsite with mugs and Mount Fuji in the distance.">
+                </picture>
+                <figcaption>Slice of life — Laid-Back Camp: a quieter mood for a slower evening.
+                    <p><em>AI image prompt summary: Create a cozy anime-style image of Rin and Nadeshiko from Laid-Back Camp relaxing at a campsite near Mount Fuji. This is AI-generated fan art, not an official screenshot.</em></p>
+                </figcaption>
+            </figure>
+            <table>
+                <caption>A sample viewing plan, rather than my actual schedule</caption>
+                <thead><tr><th scope="col">Situation</th><th scope="col">Viewing idea</th></tr></thead>
+                <tbody>
+                    <tr><td>Busy school night</td><td>One episode after finishing priority work.</td></tr>
+                    <tr><td>Free weekend</td><td>A few episodes with breaks between them.</td></tr>
+                    <tr><td>Exam week</td><td>Pause the series or save it for after studying.</td></tr>
+                </tbody>
+            </table>
+            <p>Check the episode length before starting, and choose a stopping point so a cliffhanger does not turn into an unexpectedly late night.</p>
+        </section>
+        <section id="where" aria-labelledby="where-heading" hidden>
+            <h2 id="where-heading" tabindex="-1">Where — Find Your Watching Spot</h2>
+            <p>A comfortable place with clear sound and few distractions makes it easier to follow the story, especially when reading subtitles.</p>
+            <figure>
+                <picture>
+                    <img src="images/anime-genres.png" width="1536" height="1024" alt="Frieren holding her staff while overlooking a fantasy village and mountains at sunset.">
+                </picture>
+                <figcaption>Fantasy — Frieren: watching from home can still feel like visiting another world.
+                    <p><em>AI image prompt summary: Create an anime-style image of Frieren overlooking a fantasy village and mountains at sunset. This is AI-generated fan art, not an official screenshot.</em></p>
+                </figcaption>
+            </figure>
+            <h3>Places to Enjoy Anime</h3>
+            <ul>
+                <li><strong>At home:</strong> use a television, laptop, or tablet in a comfortable spot.</li>
+                <li><strong>With friends:</strong> agree on a show and keep discussion spoiler-free.</li>
+                <li><strong>At an organized screening:</strong> check campus event listings for public events and viewing rules.</li>
+            </ul>
+            <p>Use an authorized streaming service, licensed release, or library copy when available. Check the service’s current catalog and your region before choosing a series.</p>
+        </section>
+        <section id="how" aria-labelledby="how-heading" hidden>
+            <h2 id="how-heading" tabindex="-1">How — Start Your First Series</h2>
+            <p>Start with the kinds of stories you already enjoy in books, movies, or games. A shorter series can make it easier to explore without committing to hundreds of episodes.</p>
+            <figure>
+                <picture>
+                    <img src="images/anime-genres.png" width="1536" height="1024" alt="Spike Spiegel reclining in a spaceship cockpit with stars and a planet outside the windows.">
+                </picture>
+                <figcaption>Sci-fi — Cowboy Bebop: let a setting that interests you guide your first pick.
+                    <p><em>AI image prompt summary: Create an anime-style image of Spike Spiegel from Cowboy Bebop inside a spaceship cockpit with a view of space. This is AI-generated fan art, not an official screenshot.</em></p>
+                </figcaption>
+            </figure>
+            <ol>
+                <li>Pick a genre that sounds interesting.</li>
+                <li>Read a spoiler-free description and check the content rating.</li>
+                <li>Find an authorized way to watch the series.</li>
+                <li>Try subtitles or a dubbed version and choose whichever you prefer.</li>
+                <li>Watch a few episodes, then decide whether you want to continue.</li>
+            </ol>
+            <p>There is no required watch order for exploring anime as a hobby. For a series with sequels or movies, check its release order before starting.</p>
+        </section>
+        <section id="why" aria-labelledby="why-heading" hidden>
+            <h2 id="why-heading" tabindex="-1">Why — More Than a Watchlist</h2>
+            <p>Anime brings together visual art, music, and storytelling. Those elements can make a quiet conversation or a big action scene memorable in different ways.</p>
+            <figure>
+                <picture>
+                    <img src="images/anime-genres.png" width="1536" height="1024" alt="Tohru Honda and Kyo Sohma smiling together on a veranda beside a cherry blossom garden.">
+                </picture>
+                <figcaption>Romance — Fruits Basket: relationships and emotions can make a story memorable.
+                    <p><em>AI image prompt summary: Create a warm anime-style image of Tohru and Kyo from Fruits Basket sharing a quiet moment near cherry blossoms. This is AI-generated fan art, not an official screenshot.</em></p>
+                </figcaption>
+            </figure>
+            <h3>Reasons to Explore the Hobby</h3>
+            <ul>
+                <li><strong>Creativity:</strong> discover distinctive settings, character designs, and animation.</li>
+                <li><strong>Connection:</strong> share reactions and recommendations with other viewers.</li>
+                <li><strong>Variety:</strong> explore different genres and perspectives through fiction.</li>
+            </ul>
+            <p>For me, anime is one of several interests I enjoy outside of my coursework. This site is a way to share that interest with someone who might be curious about it.</p>
+        </section>
+        <section id="ai-prompts" aria-labelledby="ai-heading" hidden>
+            <h2 id="ai-heading" tabindex="-1">AI Prompts Used</h2>
+            <p>AI assistance was used to help create the HTML structure, CSS styling, JavaScript navigation, written content, and images.</p>
+            <figure>
+                <img src="images/anime-genres.png" width="1536" height="1024" alt="Six AI-generated anime fan-art panels featuring Demon Slayer, Frieren, Fruits Basket, Laid-Back Camp, Cowboy Bebop, and Haikyu!!.">
+                <figcaption>The six genres used throughout this website, illustrated with AI-generated fan art.
+                    <p><em>AI image prompt summary: Create six anime-style scenes featuring recognizable characters from Demon Slayer, Frieren, Fruits Basket, Laid-Back Camp, Cowboy Bebop, and Haikyu!!, using a consistent illustration style.</em></p>
+                </figcaption>
+            </figure>
+            <h3>Website Structure Prompt</h3>
+            <p>Help me create a website about my hobby, anime. Guide me through the process and help organize the required sections.</p>
+            <h3>CSS Prompt</h3>
+            <p>Help style the anime website using an embedded stylesheet, CRAP design principles, a responsive layout, and a midnight navy and gold color scheme different from my main site.</p>
+            <h3>JavaScript Prompt</h3>
+            <p>Help me show one section at a time, display Home first, and update the browser title to match the section being shown.</p>
+            <h3>Image Prompt</h3>
+            <p>Help me create anime-style images based on different genres and existing series. Use recognizable characters and settings while keeping the artwork consistent. Change the romance image from Your Lie in April to Fruits Basket.</p>
+            <p>These prompts summarize the instructions developed during the project. The final artwork was created with ChatGPT’s image-generation tool and is not official artwork from the featured series.</p>
+        </section>
+    </main>
+    <footer>
+        <nav aria-label="Page validation">
+            <a id="validate-html" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fpbikusa%2Fitis3135%2Fhobby%2F">HTML Validation</a>
+            <a id="validate-css" href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fpbikusa%2Fitis3135%2Fhobby%2F">CSS Validation</a>
+            <a id="validate-accessibility" href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/pbikusa/itis3135/hobby/">Accessibility Check</a>
+        </nav>
+        <p>Designed by <a href="../bikusastudio.co/">Bikusa Studio</a> &copy; 2026</p>
+        <p><a href="../">Return to ITIS3135</a></p>
+    </footer>
+</body>
+</html>

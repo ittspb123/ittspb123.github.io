@@ -55,6 +55,8 @@ header p {
   font-size: 0.98rem;
 }
 
+/* Primary navigation */
+
 nav {
   font-family: "Outfit", sans-serif;
   margin-top: 1rem;
@@ -68,6 +70,25 @@ header nav a:visited {
 
 header nav a:hover,
 header nav a:focus {
+  color: var(--clay-light);
+}
+
+/* Secondary navigation */
+
+header .secondary-nav {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--sand-warm);
+  font-size: 0.85rem;
+}
+
+header .secondary-nav a,
+header .secondary-nav a:visited {
+  color: var(--sand-warm);
+}
+
+header .secondary-nav a:hover,
+header .secondary-nav a:focus {
   color: var(--clay-light);
 }
 
@@ -154,7 +175,7 @@ blockquote {
   max-width: 34rem;
 }
 
-/* Main-content links: normal and visited use the same brown. */
+/* Main-content links */
 
 main a,
 main a:visited {
