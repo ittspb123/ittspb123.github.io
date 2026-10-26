@@ -110,14 +110,6 @@ h2 {
   padding-bottom: 0.4rem;
 }
 
-h3 {
-  font-family: "Outfit", sans-serif;
-  font-weight: 500;
-  font-size: 1.2rem;
-  color: var(--river);
-  margin-bottom: 0.4rem;
-}
-
 /* Introduction display name: retained for the existing introduction page. */
 
 h6 {
