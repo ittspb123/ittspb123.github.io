@@ -25,24 +25,31 @@
 
   <main>
     <h2>Workshop Survey</h2>
+    <!--
+  The survey-form ID lets JavaScript handle submission and reset.
+  Input IDs connect each field to its label.
+  The survey-status ID identifies the feedback message.
+  The choice class aligns radio buttons and checkboxes with their labels.
+  The survey-note ID connects the instructions to the form.
+-->
 
-    <p>
-      Help Patient Beaver Workshop design desk accessories for your
-      study space.
-    </p>
+  <form id="survey-form" aria-describedby="survey-note">
+  <p id="survey-note">
+    Help Patient Beaver Workshop design desk accessories for your
+    study space.
+  </p>
 
-    <form id="survey-form" aria-describedby="survey-note">
-      <fieldset>
-        <legend>Introduce Yourself</legend>
+  <fieldset>
+    <legend>Introduce Yourself</legend>
 
-        <label for="first-name">First name (required)</label>
-        <input
-          id="first-name"
-          name="first-name"
-          type="text"
-          autocomplete="given-name"
-          required
-        >
+    <label for="first-name">First name (required)</label>
+    <input
+      id="first-name"
+      name="first-name"
+      type="text"
+      autocomplete="given-name"
+      required
+    >
 
         <label for="last-name">Last name (required)</label>
         <input

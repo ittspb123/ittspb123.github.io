@@ -233,15 +233,14 @@ footer a:focus-visible {
 /* Workshop collection cards */
 
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(100%, 15rem), 1fr)
-  );
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.25rem;
 }
 
 .workshop-card {
+  flex: 1 1 15rem;
+  min-width: 0;
   background: #fffdf7;
   border: 2px solid var(--river);
   border-radius: 0.5rem;
@@ -254,8 +253,13 @@ footer a:focus-visible {
   height: auto;
 }
 
-.workshop-card h3 {
+h3 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--river);
   margin-top: 0.75rem;
+  margin-bottom: 0.4rem;
 }
 
 .workshop-card p {
