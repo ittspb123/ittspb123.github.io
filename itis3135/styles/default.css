@@ -205,23 +205,6 @@ footer p {
   margin: 0.6rem auto 0;
 }
 
-/* Visible keyboard focus */
-
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible,
-.table-scroll:focus-visible {
-  outline: 3px solid var(--river);
-  outline-offset: 4px;
-}
-
-header a:focus-visible,
-footer a:focus-visible {
-  outline-color: var(--sand);
-}
-
 /* Workshop collection cards */
 
 .card-grid {
@@ -256,6 +239,23 @@ h3 {
 
 .workshop-card p {
   margin-bottom: 0;
+}
+
+/* Visible keyboard focus */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.table-scroll:focus-visible {
+  outline: 3px solid var(--river);
+  outline-offset: 4px;
+}
+
+header a:focus-visible,
+footer a:focus-visible {
+  outline-color: var(--sand);
 }
 
 /* Workshop survey */
